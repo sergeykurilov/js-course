@@ -13,9 +13,8 @@
 4) Потренироваться и переписать цикл еще двумя способами*/
 
 'use strict';
-  var a = prompt("Film")
-  while (a==undefined||a==null||a=='') { //тут проверка работает
-    if(a.length >50){
-    var a = +prompt ("Enter the first number", "");
+  while (a==undefined||a==null||a==''||a==false) {
+  
+     var a = +prompt ("Введите больше", "")
+  
   }
-}
