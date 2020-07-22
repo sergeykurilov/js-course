@@ -13,8 +13,24 @@
 4) Потренироваться и переписать цикл еще двумя способами*/
 
 'use strict';
-  while (a==undefined||a==null||a==''||a==false) {
-  
-     var a = +prompt ("Введите больше", "")
-  
-  }
+var a = prompt("Введите больше", "");
+  while (!a || a.length > 50) {
+   alert("Keep the message length to 50 chars or less")
+   a = prompt("Введите больше", "");
+
+      } 
+
+document.write(a);
+
+// let personalMovieDB = ['Снег','Снег','Снег','Снег','Снег','Снег','Снег','Снег','Снег','Снег','Снег'];
+
+// if(personalMovieDB.length < 10){
+//    alert("Просмотрено довольно мало фильмов");
+// }else if(personalMovieDB.length >10 && personalMovieDB.length < 30){
+//    alert("Вы классический зритель");
+// }else if(personalMovieDB.length > 30){
+//    alert("Вы киноман");
+// }
+// else{
+//    alert("Произошла ошибка");
+// }
