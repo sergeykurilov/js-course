@@ -13,14 +13,14 @@
 4) Потренироваться и переписать цикл еще двумя способами*/
 
 'use strict';
-var a = prompt("Введите больше", "");
-  while (!a || a.length > 50) {
-   alert("Keep the message length to 50 chars or less")
-   a = prompt("Введите больше", "");
+// var a = prompt("Введите больше", "");
+//   while (!a || a.length > 50) {
+//    alert("Keep the message length to 50 chars or less")
+//    a = prompt("Введите больше", "");
 
-      } 
+//       } 
 
-document.write(a);
+// document.write(a);
 
 // let personalMovieDB = ['Снег','Снег','Снег','Снег','Снег','Снег','Снег','Снег','Снег','Снег','Снег'];
 
@@ -34,3 +34,69 @@ document.write(a);
 // else{
 //    alert("Произошла ошибка");
 // }
+
+// ***************
+
+/** Задание на урок:
+
+1) Создать переменную numberOfFilms и в неё поместить ответ от пользователя на вопрос:
+'Сколько фильмов вы уже посмотрели?'
+
+2) Создать объект personalMovieDB и в него поместить такие свойства:
+    - count - сюда передается ответ на первый вопрос
+    - movies - в это свойство поместить пустой объект
+    - actors - тоже поместить пустой объект
+    - genres - сюда поместить пустой массив
+    - privat - в это свойство поместить boolean(логическое) значение false
+
+3) Задайте пользователю по два раза вопросы:
+    - 'Один из последних просмотренных фильмов?'
+    - 'На сколько оцените его?'
+Ответы стоит поместить в отдельные переменные
+Записать ответы в объект movies в формате: 
+    movies: {
+        'logan': '8.1'
+    }
+
+Проверить, чтобы все работало без ошибок в консоли */ 
+
+// const numberOfFilms = 18;
+
+// const personalMovieDB = {
+//    count: numberOfFilms,
+//    movies: {},
+//    actors: {},
+//    genres: [],
+//    privat: false
+// }
+
+// let a = prompt('Один из последних просмотренных фильмов?');
+// let b = prompt('На сколько оцените его?');
+
+// let movies = {
+//    'logan': a,
+//    'baltasar': b,
+// }
+// console.log(movies)
+// console.log(movies.baltasar)
+
+
+// *************** Решение
+
+const numberOfFilms = +prompt("Сколько фильмов просмотрел пользователь");
+const personalMovieDB = {
+   count: numberOfFilms,
+   movies: {},
+   actors: {},
+   genres: [],
+   privat: false
+}
+let a = prompt('Один из последних просмотренных фильмов?');
+let b = prompt('На сколько оцените его?');
+let c = prompt("Сколько фильмов просмотрел пользователь");
+let d = prompt('На сколько оцените его?');
+
+personalMovieDB.movies[45] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB)
