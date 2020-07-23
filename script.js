@@ -91,12 +91,41 @@ const personalMovieDB = {
    genres: [],
    privat: false
 }
-let a = prompt('Один из последних просмотренных фильмов?');
-let b = prompt('На сколько оцените его?');
-let c = prompt("Сколько фильмов просмотрел пользователь");
-let d = prompt('На сколько оцените его?');
 
-personalMovieDB.movies[45] = b;
-personalMovieDB.movies[c] = d;
+
+
+
+for(let i = 0; i < 2; i++){
+    const a = prompt('Один из последних просмотренных фильмов?'),
+          b = prompt('На сколько оцените его?');
+    if(a !== null && b != null && a != '' && b != '' && a.length < 50){
+        personalMovieDB.movies[a] = b;
+        console.log('done')
+    }else{
+        console.log('error');
+        i--;
+    }
+          
+
+} 
+
 
 console.log(personalMovieDB)
+
+
+//   while (!a || a.length > 50) {
+//    alert("Keep the message length to 50 chars or less")
+//    a = prompt('Один из последних просмотренных фильмов?');
+
+//       } 
+
+// if(personalMovieDB.count < 10){
+//    alert("Просмотрено довольно мало фильмов");
+// }else if(personalMovieDB.count >10 && personalMovieDB.count < 30){
+//    alert("Вы классический зритель");
+// }else if(personalMovieDB.count > 30){
+//    alert("Вы киноман");
+// }
+// else{
+//    alert("Произошла ошибка");
+// }
