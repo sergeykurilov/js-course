@@ -188,22 +188,21 @@ const personalMovieDB = {
 // detectPersonalLevel();
 
 
-function showMyDB(hidden){
-    if(!hidden){
-        console.log(personalMovieDB)
-    }
-}
-showMyDB(personalMovieDB.privat);
+// function showMyDB(hidden){
+//     if(!hidden){
+//         console.log(personalMovieDB)
+//     }
+// }
+// showMyDB(personalMovieDB.privat);
 
 
-function writeYourGenres(){
-    for(let i = 1; i <= 3; i++){
-        const a = prompt(`Ваш любимый жанр под номером ${i}`); 
-        personalMovieDB.genres.push(a)
-}
-}
+// function writeYourGenres(){
+//     for(let i = 1; i <= 3; i++){
+//         personalMovieDB.genres[i - 1] = prompt(`Ваш любимый жанр под номером ${i}`); 
+// }
+// }
 
-console.log(writeYourGenres())
+// console.log(writeYourGenres())
 
 /* Задание на урок:
 
@@ -217,3 +216,27 @@ false - выводит в консоль главный объект прогр�
 genres
 
 P.S. Функции вызывать не обязательно*/
+
+function first() {
+    setTimeout(() =>{
+        console.log(new Date())
+    }, 2)
+}
+
+function second(){
+    console.log(2)
+}
+first();
+second();
+
+function learnJS(lang, callback){
+    console.log(`Я учу ${lang}`)
+    callback();
+}
+
+function done(){
+    console.log('Пошел ')
+}
+
+
+learnJS('JS', done);
