@@ -1,10 +1,32 @@
 'use strict';
 
-function abbrevName(name){
-  const a =  name.charAt(0);
-  const b = name.charAt(4)
-   return `${a}.${b}`;
-}
+  let str = "some";
+  let strobj = new String(str);
+
+  // console.log(typeof(str));
+  // console.log(typeof(strobj));
+
+  console.dir([1,2,3,4,5,6]);
+
+  const soldier = {
+    health: 400,
+    armor: 100
+  };
+
+  // const john = {
+  //   health: 100,
+  //   sayHello: function() {
+  //     console.log("Hello");
+  //   }
+  // };
+
+  const john = Object.create(soldier);
+  // john.__proto__ = soldier;
+
+  // console.log(john.armor);
 
 
-console.log(abbrevName("Sam Harris"))
+  // john.sayHello(); 
+
+
+  // Object.setPrototypeOf(john, soldier);
