@@ -1,11 +1,13 @@
+
 'use strict';
 
 const box = document.getElementById('box'),
       btns = document.getElementsByTagName('button'),
       circles = document.getElementsByClassName('circle'),
-      hearts = document.querySelectorAll('.heart'),
-      oneHeart = document.querySelector('.heart'),
-      wrapper = document.querySelector('.wrapper');
+      wrapper = document.querySelector('.wrapper'),
+      hearts = wrapper.querySelectorAll('.heart'),
+      oneHeart = wrapper.querySelector('.heart');
+    
 console.dir(box);
 
 box.style.fontSize = '50px';
@@ -42,7 +44,7 @@ wrapper.append(div);
 
 // wrapper.insertBefore(div, hearts[2]);
 
-
+hearts[0].remove();
 // // // circles[0].remove();
 // wrapper.removeChild(hearts[1]);
 
