@@ -35,12 +35,25 @@ const {movies} = movieDB;
 const promoList = document.querySelectorAll('.promo__interactive-item');
 const delClass = document.querySelector('.delete');
 const promlss = document.querySelector('.promo__interactive-list');
-promlss.innerHTML = ""
+// promlss.innerHTML = ""
 movies.sort();
+promlss.innerHTML = '';
 
+// movies.forEach((film, i) =>{
+//     promlss.innerHTML += `
+//     <li class="promo__interactive-item">${i + 1} ${film}</li>
+//     `;
+// });
 
-movies.forEach((film, i) =>{
-    promlss.innerHTML += `
-    <li class="promo__interactive-item">${i + 1} ${film}</li>
-    `;
-});
+// promoList.forEach((item) =>{
+//     item.remove();
+// });
+
+    let li;    
+    movies.forEach((item)=> {
+        li = document.createElement('li');
+        li.classList.add('promo__interactive-item');
+        li.innerHTML = item;
+        promlss.append(li)
+    });
+
