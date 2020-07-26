@@ -20,7 +20,7 @@ const movieDB = {
         "Лига справедливости",
         "Ла-ла лэнд",
         "Одержимость",
-        "Скотт Пилигрим против..."
+        "Скотт Пилигрим против...6"
     ]
 };
 
@@ -32,7 +32,15 @@ title.textContent = 'Драма';
 promoBG.style.background = "url(../img/bg.jpg) no-repeat top";
 
 const {movies} = movieDB;
+const promoList = document.querySelectorAll('.promo__interactive-item');
+const delClass = document.querySelector('.delete');
+const promlss = document.querySelector('.promo__interactive-list');
+promlss.innerHTML = ""
+movies.sort();
 
-movies.forEach(item => {
-    console.log(item);
+
+movies.forEach((film, i) =>{
+    promlss.innerHTML += `
+    <li class="promo__interactive-item">${i + 1} ${film}</li>
+    `;
 });
