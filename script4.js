@@ -15,7 +15,7 @@ function compareNum(a,b){
 // arr.map(function(val, i, num){
 //     console.log(`${val} --- ${i} -- ${num}`)
 // })
-dsadasdadsadadasdsa
+dsadasdadsadadasdsadsadadasdadadsadsadasdadsadsa
 // arr.push(12)
 
 // console.log(arr);
