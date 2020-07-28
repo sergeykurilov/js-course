@@ -19,6 +19,11 @@ P.S. Здесь есть несколько вариантов решения з
 
 'use strict';
 
+
+document.addEventListener('DOMcontentLoaded', ()=> {
+    
+})
+
 const movieDB = {
     movies: [
         "Логан",
@@ -72,7 +77,9 @@ const remember = document.getElementById('remember');
 
     for (let btns of deleteBtns){
         btns.addEventListener('click', (e)=>{
+            
             e.target.parentNode.remove();
+    
         });
     }
 
