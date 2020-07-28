@@ -54,6 +54,6 @@ promlss.innerHTML = '';
         li = document.createElement('li');
         li.classList.add('promo__interactive-item');
         li.innerHTML = item;
-        promlss.append(li)
+        promlss.append(li);
     });
 
