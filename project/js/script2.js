@@ -77,9 +77,14 @@ const remember = document.getElementById('remember');
 
     for (let btns of deleteBtns){
         btns.addEventListener('click', (e)=>{
-            
             e.target.parentNode.remove();
-    
+            promlss.innerHTML = '';
+                promlss.innerHTML += `
+                <li class="promo__interactive-item">${movies.length} ${film}
+                <div class="delete"></div></li>
+            
+                `;
+   
         });
     }
 
@@ -114,4 +119,6 @@ btn.addEventListener('click', (event)=> {
     
         `;
     }
+    
 });
+movieDB.movies.sort();
