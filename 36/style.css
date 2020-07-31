@@ -1,0 +1,19 @@
+.btn{
+    width: 200px;
+    height: 200px;
+
+}
+.red{
+    background: red;
+}
+button{
+    width: 100px;
+    height: 100px;
+    background: yellow;
+}
+.blue{
+    background: blue;
+}
+.btn-block{
+    background: gray;
+}
