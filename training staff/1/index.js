@@ -8,27 +8,25 @@ menuButton.addEventListener('click', function(){
 
 // ***********************
 
-const tab = document.querySelector('.tab'),
-      tabLinks = tab.querySelectorAll('.tab-links'),
-      tabContent = document.querySelectorAll('.tab-content');
+let tabs = document.querySelectorAll('.tabheader__item'),
+tabsContent = document.querySelectorAll('.tabcontent'),
+tabsParent = document.querySelector('.tabheader__items');
+
 
 function removeContent(){
-    for(let eachContentBlock of tabContent){
-        eachContentBlock.classList.add('-hide');
-        eachContentBlock.classList.remove('-active');
-    }
+    tabs.forEach(item => {
+        item.classList.add('-hide');
+        item.classList.remove('-active');
+    });
+
 }
 
 function addContent(){
-    for(let eachContentBlock of tabContent){
-        for(let menuItem of tabLinks){
-            menuItem.addEventListener('click', ()=>{
-                eachContentBlock.classList.remove('-hide');
-                eachContentBlock.classList.add('-active');
-            });
-        }
-    }
+    tabs.forEach(item => {
+        item.classList.add('-active');
+        item.classList.remove('-hide');
+    });
+
 }
 addContent();
-
 removeContent();
