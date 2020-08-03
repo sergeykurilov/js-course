@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+.mobile-menu{
+    list-style-type: none;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    display: none;
+    animation-name: menu;
+    animation-duration: 5s;
+    transition: 1s;
+
+}
+.-active{
+    display: block;
+
+}
+
+@keyframes menu {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
