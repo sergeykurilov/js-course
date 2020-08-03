@@ -9,9 +9,24 @@
     transition: 1s;
 
 }
+
+ul.tab-links {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    cursor: pointer;
+}
+ul.tab-links>li{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .-active{
     display: block;
 
+}
+.-hide{
+    display: none;
 }
 
 @keyframes menu {
