@@ -107,17 +107,17 @@ window.addEventListener('DOMContentLoaded', function() {
 
     //modal
 
-    // const modalOpen = document.querySelector('[data-modal]'),
-    //       modalBody = document.querySelector('.modal') ,
-    //       modalClose = document.querySelector('[data-close]');
+    const modalOpen = document.querySelector('[data-modal]'),
+          modalBody = document.querySelector('.modal') ,
+          modalClose = document.querySelector('[data-close]');
 
-    // modalOpen.addEventListener('click', ()=>{
-    //     modalBody.classList.add('open');
-    // });
+    modalOpen.addEventListener('click', ()=>{
+        modalBody.classList.add('open');
+    });
 
-    // modalClose.addEventListener('click', ()=>{
-    //     modalBody.classList.remove('open');
-    // });
+    modalClose.addEventListener('click', ()=>{
+        modalBody.classList.remove('open');
+    });
 
 
     const modalTrigger = document.querySelectorAll('[data-modal]'),
