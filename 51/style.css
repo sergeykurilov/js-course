@@ -1,0 +1,1412 @@
+h1.hero-domains-title {
+    color: #0fadcf;
+    font-family: "MontserratExtraBold";
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+p.hero-domains-subtitle {
+    color: #1c1c1c;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;
+}
+button.hero-domains-btn {
+    width: 240px;
+    height: 43px;
+    border-radius: 10px;
+    background-color: #00adcf;
+    font-size: 19px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+section.hero-domains {
+    background: url(https://atomiqconsulting.com/wp-content/uploads/2020/08/bg1.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+p.hot-sales-black {
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 50px;
+	margin-right: 15px;
+	color: #fff;
+    font-family: "MontserratExtraBold";
+    text-transform: uppercase;
+}
+p.hot-sales-blue {
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 50px;
+    font-family: "MontserratExtraBold";
+    color: #00adcf;
+    text-transform: uppercase;
+}
+.hot-sales-bl {
+    display: flex;
+}
+section.hot-sales {
+    background: url('https://atomiqconsulting.com/wp-content/uploads/2020/08/bg2.png');
+	 background-size: cover;
+    background-position: center;
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+.domains-block {
+    width: 281px;
+    height: 168px;
+		padding: 36px;
+    border: 1px solid #e7ebee;
+}
+.domains-block__img {
+    display: flex;
+    justify-content: center;
+}
+p.domain-subtitle {
+    color: #a4a4a4;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: center;
+}
+p.domain-title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: center;
+    margin-bottom: -8px;
+}
+
+
+
+.licensing-parthers{
+	margin-top: 2em !important;
+}
+@media (max-width: 1410px) {
+  .licensing-flag {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 24%;
+    margin-right: 15px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .licensing-block {
+    max-width: 85%;
+    padding-left: 5em;
+  }
+  .licensing-parthers {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 769px) {
+  .licensing {
+    padding-bottom: 6em;
+    background: url(https://atomiqconsulting.com/wp-content/themes/Consulting/img/licensing/license-back.png);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .licensing-block {
+    max-width: 62%;
+    padding-left: 11em;
+  }
+  .licensing-title {
+    color: #0fa3c9;
+font-family: MontserratExtraBold, Tahoma, Arial, sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    letter-spacing: 0.71px;
+    max-width: 85%;
+    margin: auto;
+  }
+  .licensing-subtitle {
+    max-width: 85%;
+    margin: auto;
+    color: #000000;
+    font-family: MontserratRegular, Tahoma, Arial, sans-serif;
+    font-size: 20px;
+    padding-bottom: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.38px;
+  }
+  .licensing-subtitle2 {
+    max-width: 85%;
+    margin: auto;
+    color: #000000;
+    font-family: MontserratRegular, Tahoma, Arial, sans-serif;
+    font-size: 20px;
+    padding-bottom: 85px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.38px;
+  }
+  .licensing-parthers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    max-width: 100%;
+  }
+  .licensing-flag {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 17%;
+    margin-right: 30px;
+  }
+  .licensing-flag:nth-child(6) {
+    margin-right: 0px;
+  }
+  .licensing-parthers__labuan-flag {
+    text-align: center;
+  }
+  .Cyprus-flag {
+    background: url(https://atomiqconsulting.com/wp-content/themes/Consulting/img/licensing/Cyprus.png);
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    transition: 0.5s;
+    margin-bottom: 20px;
+  }
+  .Cyprus-flag:hover{
+    transform: scale(1.2);
+  }
+  .Labuan-flag {
+    background: url(https://atomiqconsulting.com/wp-content/themes/Consulting/img/licensing/Labuan.png);
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    transition: 0.5s;
+    margin-bottom: 20px;
+  }
+  .Labuan-flag:hover{
+    transform: scale(1.2);
+  }
+  .Mauritius-flag {
+    background: url(https://atomiqconsulting.com/wp-content/themes/Consulting/img/licensing/Mauritius.png);
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    transition: 0.5s;
+    margin-bottom: 20px;
+  }
+  .Mauritius-flag:hover{
+    transform: scale(1.2);
+  }
+  .SVG-flag {
+    background: url(https://atomiqconsulting.com/wp-content/themes/Consulting/img/licensing/Saint_Vincent_and_Grenadines.png);
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    transition: 0.5s;
+    margin-bottom: 20px;
+  }
+  .SVG-flag:hover{
+    transform: scale(1.2);
+  }
+  .Seyshelles-flag {
+    background: url(https://atomiqconsulting.com/wp-content/themes/Consulting/img/licensing/Seyshelles.png);
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    transition: 0.5s;
+    margin-bottom: 20px;
+  }
+  .Seyshelles-flag:hover{
+    transform: scale(1.2);
+  }
+  .Vanuatu-flag {
+    background: url(https://atomiqconsulting.com/wp-content/themes/Consulting/img/licensing/Vanuatu.png);
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    transition: 0.5s;
+    margin-bottom: 20px;
+  }
+  .Vanuatu-flag:hover{
+    transform: scale(1.2);
+  }
+  .licensing-parthers__labuan-flag {
+    color: #000000;
+    font-family: MontserratRegular, Tahoma, Arial, sans-serif;
+    font-size: 16px;
+    transition: 0.5s;
+  }
+  .licensing-parthers__labuan-flag:hover{
+    transform: scale(1.2);
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .licensing {
+    min-height: 50.875em;
+    background-attachment: fixed;
+    background-color: #e1ebf2;
+  }
+  .licensing-title {
+    color: #0fa3c9;
+font-family: MontserratExtraBold, Tahoma, Arial, sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    letter-spacing: 0.71px;
+    max-width: 85%;
+    margin: auto;
+  }
+  .licensing-subtitle {
+    max-width: 85%;
+    margin: auto;
+    color: #000000;
+    font-family: Tahoma;
+    font-size: 20px;
+    padding-bottom: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.38px;
+  }
+  .licensing-subtitle2 {
+    max-width: 85%;
+    margin: auto;
+    color: #000000;
+    font-family: Tahoma;
+    font-size: 20px;
+    padding-bottom: 85px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.38px;
+  }
+  .licensing-parthers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    max-width: 85%;
+  }
+  .licensing-flag {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 17%;
+    padding-right: 5px;
+    max-width: 23%;
+  }
+  .licensing-parthers__labuan-flag {
+    text-align: center;
+  }
+  .Cyprus-flag {
+    background: url(../img/responsive/tablet/licensing/Cyprus.png);
+    background-repeat: no-repeat;
+    width: 125px;
+    height: 125px;
+    margin-bottom: 20px;
+  }
+  .Labuan-flag {
+    background: url(../img/responsive/tablet/licensing/Labuan.png);
+    background-repeat: no-repeat;
+    width: 125px;
+    height: 125px;
+    margin-bottom: 20px;
+  }
+  .Mauritius-flag {
+    background: url(../img/responsive/tablet/licensing/Mauritius.png);
+    background-repeat: no-repeat;
+    width: 125px;
+    height: 125px;
+    margin-bottom: 20px;
+  }
+  .SVG-flag {
+    background: url(../img/responsive/tablet/licensing/Saint_Vincent_and_Grenadines.png);
+    background-repeat: no-repeat;
+    width: 125px;
+    height: 125px;
+    margin-bottom: 20px;
+  }
+  .Seyshelles-flag {
+    background: url(../img/responsive/tablet/licensing/Seyshelles.png);
+    background-repeat: no-repeat;
+    width: 125px;
+    height: 125px;
+    margin-bottom: 20px;
+  }
+  .Vanuatu-flag {
+    background: url(../img/responsive/tablet/licensing/Vanuatu.png);
+    background-repeat: no-repeat;
+    width: 125px;
+    height: 125px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .licensing-flag {
+    margin-right: 75px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 578px) {
+  .licensing-parthers__labuan-flag {
+    display: none;
+  }
+  .licensing {
+    min-height: 45.875em;
+    background-color: #e1ebf2;
+    padding-right: 5px;
+    background-attachment: fixed;
+  }
+  .licensing-title {
+    color: #0fa3c9;
+font-family: MontserratExtraBold, Tahoma, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    letter-spacing: 0.71px;
+    max-width: 85%;
+    margin: auto;
+  }
+  .licensing-subtitle {
+    max-width: 85%;
+    margin: auto;
+    color: #000000;
+    font-family: MontserratRegular, Tahoma, Arial, sans-serif;
+    font-size: 16px;
+    padding-bottom: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.38px;
+  }
+  .licensing-subtitle2 {
+    max-width: 85%;
+    margin: auto;
+    color: #000000;
+    font-family: Tahoma;
+    font-size: 16px;
+    padding-bottom: 30px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.38px;
+  }
+  .licensing-parthers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    max-width: 100%;
+  }
+  .Cyprus-flag {
+    background: url(../img/responsive/mobile/licensing/Cyprus.png);
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+  }
+  .Labuan-flag {
+    background: url(../img/responsive/mobile/licensing/Labuan.png);
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+  }
+  .Mauritius-flag {
+    background: url(../img/responsive/mobile/licensing/Mauritius.png);
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+  }
+  .SVG-flag {
+    background: url(../img/responsive/mobile/licensing/Saint_Vincent_and_Grenadines.png);
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+  }
+  .Seyshelles-flag {
+    background: url(../img/responsive/mobile/licensing/Seyshelles.png);
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+  }
+  .Vanuatu-flag {
+    background: url(../img/responsive/mobile/licensing/Vanuatu.png);
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+  }
+  .licensing-block {
+    max-width: 89%;
+    padding-left: 2em;
+  }
+}
+
+
+
+.flags-block-f-bl__img {
+    margin-right: 1em;
+}
+body{
+	overflow-x:none !important;
+}
+.flags-blocks {
+    display: flex;
+    align-items: center;
+	max-width: 50%;
+	margin: auto;
+}
+@media screen and (max-width:568px){
+	.flags-blocks{
+		flex-direction:column;
+}
+}
+p.country-name {
+    font-size: 18px;
+	    margin: 0px;
+}
+.flags-block-f-bl {
+    display: flex;
+	    margin-bottom: 5px;
+}
+.flags-block-f {
+    flex: 50%;
+}
+.prev-expo{
+	   background: aliceblue;
+}
+
+.media-upload-form .notice, .media-upload-form div.error, .wrap .notice, .wrap div.error, .wrap div.updated{
+	display: none !important;
+}
+.woocommerce nav.woocommerce-pagination ul li a, .woocommerce nav.woocommerce-pagination ul li span{
+	padding:0px !important
+}
+.woocommerce ul.products li.product a img{
+	border-radius: 25px !important;
+}
+.woocommerce .woocommerce-pagination ul.page-numbers li, .woocommerce-page .woocommerce-pagination ul.page-numbers li{
+	    width: 3em;
+}
+.orderby{
+	display:none;
+}
+.portfolio-blocks{
+	display: flex;
+	background: #F0F0F0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.entry-summary>a>button{
+	margin-top: 5em !important;
+}
+.portfolio-block-first,.portfolio-block-second,.portfolio-block-third,.portfolio-block-fourth,.portfolio-block-fifth,.portfolio-block-sixth,.portfolio-block-seventh,.portfolio-block-eighth{
+	  width: 350px;
+    height: 350px;
+	  margin: 40px;
+box-shadow: 0px 0px 10px 10px #000;
+    border-radius: 25px;
+}
+.portfolio-block-eighth{
+		background: url('https://atomiqconsulting.com/wp-content/uploads/2020/05/Ca121212pture.jpg');
+	background-size: cover;
+}
+.portfolio-block-fourth{
+	background: url('https://atomiqconsulting.com/wp-content/uploads/2020/05/Capt21313ure.jpg');
+	background-size: cover;
+}
+.portfolio-block-first{
+	background: url('https://atomiqconsulting.com/wp-content/uploads/2020/05/12124Capture.jpg');
+	background-size: cover;
+}
+.portfolio-block-third{
+		background: url('https://atomiqconsulting.com/wp-content/uploads/2020/05/Ca1212pture.jpg');
+	background-size: cover;
+}
+.portfolio-block-second{
+	background: url('https://atomiqconsulting.com/wp-content/uploads/2019/02/site_5.jpg');
+	    background-position: center;
+	background-size: cover;
+}
+.portfolio-block-seventh{
+			background: url('https://atomiqconsulting.com/wp-content/uploads/2020/02/Screenshot_4.png');
+	    background-position: left;
+	background-size: cover;
+}
+.portfolio-block-sixth{
+	
+}
+.portfolio-block-sixth{
+		background: url('https://atomiqconsulting.com/wp-content/uploads/2020/02/Screenshot_3.png');
+	    background-position: center;
+	background-size: cover;
+}
+.portfolio-block-fifth{
+	background: url('https://atomiqconsulting.com/wp-content/uploads/2020/02/Screenshot_5.png');
+	    background-position: center;
+	background-size: cover;
+}
+.pum-theme-7540 .pum-container, .pum-theme-default-theme .pum-container{
+	background-size: cover;
+}
+#videoSection>div>a>p{
+	       margin-left: auto;
+}
+#videoSection{
+	background: url('https://atomiqconsulting.com/wp-content/uploads/2020/05/5eb2f26708677.png') !important;
+	background-size: cover !important;
+}
+#videoSection>div>a>p>span{
+	    color: #fff !important;
+}
+.customize-unpreviewable{
+	    color: #00ADCF !important;
+}
+#videoSection>div>p{
+	    margin-left: auto;
+}
+#videoSection>div{
+	    padding-top: 2% !important;
+}
+.wrap-wp {
+position: relative;
+    display: block;
+    margin: auto;
+    left: auto;
+    margin-left: -45%;
+    right: auto;
+    margin-right: -40%;
+}
+#attachment_7839{
+	box-shadow: 0 0 10px #000;
+}
+#attachment_9135wp-13{
+box-shadow: 0 0 10px #000;
+}
+.wp-12{
+	    width: 200px !important;
+    margin: auto;
+}
+
+.essb_displayed_bottombar{
+	display:none;
+}
+.essb_bottombar_inner{
+	display:none;
+}
+.crp_related li {
+    padding: 0px; 
+	    margin: 5px !important;
+}
+
+
+.pum-theme-7540 .pum-title, .pum-theme-default-theme .pum-title{
+	padding-bottom: 20px;
+	text-align:left;
+}
+.wp-image-9068{
+		width: 200px;
+	margin: auto;
+}
+.wp-image-3317{
+			width: 200px;
+	margin: auto;
+}
+.essb_displayed_bottom:before{
+content: 'SHARE';
+	text-align:left;
+	    color: #00ADCF;
+	font-size: 24px;
+	font-weight:bolder;
+	line-height: 60px;
+	border-bottom: 1px solid;
+font-family: 'Lato';
+}
+.essb_displayed_bottom:after{
+	border-bottom: 2px solid #000; 
+}
+.form-form-one{
+	float: right;
+}
+p.bahamas-answer1:before{
+	content: "\f111";
+	position: absolute;
+    left: 0px;
+    top: 0;
+    font-family: FontAwesome;
+    transform: rotate(180deg);
+    color: #00adcf;
+}
+.bahamas-answer1 {
+    padding: 0 1em;
+    font-size: 16px;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 1em;
+    position: relative;
+    padding-left: 2em;
+}
+#blogLeft>article>ol>li{
+	color: #000 !important;
+	line-height:32px;
+	margin-bottom: 10px;
+}
+.wp-image-7882{
+	width: 500px;
+	margin: auto;
+}
+.img-12{
+	width: 350px;
+	margin: auto;
+}
+.description{
+	color:#000;
+}
+.expo-title{
+	text-transform: none !important;
+}
+.next-expo{
+	   background: aliceblue;
+}
+.expo-blocks{
+	  display: flex;
+    justify-content: center;
+}
+.bahamas-text-padding{
+	padding-left: 1em;
+}
+.n-flags{
+	width:20%;
+}
+#tawkchat-minified-box{
+	right: -10%;
+}
+.str{
+		display: block;
+    margin-bottom: 0.8em;
+    margin-top: 0.8em;
+}
+.no-space{
+	padding-left:1em;
+}
+.attch-zoom{
+	 -moz-transition: all 1s ease-out;
+ -o-transition: all 1s ease-out;
+ -webkit-transition: all 1s ease-out;
+}
+.wpxButton2{
+
+	border-top: 10px solid #005566; 
+	border-left: 0px solid transparent;
+	border-radius: 3%;
+  background: #00d5ff;
+  box-shadow: 0 -200px 150px -120px #121212 inset;
+  animation: background 4s infinite alternate;
+}
+
+@keyframes background {
+  50% {
+    background: skyblue;
+    box-shadow: 0 -200px 100px -100px #00ADCF inset;
+  
+}
+}
+.attch-zoom:hover{
+	-webkit-transform: scale(1.1);
+ -moz-transform: scale(1.1);
+ -o-transform: scale(1.1);
+box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.75) !important;
+}
+#pGoMVIO-1572855336299{
+	    right: 70px !important;
+}
+.centred-img{
+	margin: auto !important;
+}
+.zoom-hero:hover {
+ -webkit-transform: scale(1.5);
+ -moz-transform: scale(1.5);
+ -o-transform: scale(1.5);
+z-index:1;
+	  transition: .3s ease-out;
+     transition-delay: 0.2s;
+}
+.standard-button{
+   background: rgba(241,108,32,0.4) !important;
+}
+.standard-button:hover{	
+	background: #fff !important;
+	color: #000;
+	 transition: .3s ease-out;
+     transition-delay: 0.2s;
+}
+.btn-1:hover {
+    background: white;
+     transition: .2s ease-out;
+     transition-delay: 0.2s;
+}
+.btn-2:hover {
+    background: white;
+     transition: .2s ease-out;
+     transition-delay: 0.2s;
+}
+.btn-3:hover {
+    background: white;
+     transition: .2s ease-out;
+     transition-delay: 0.2s;
+}
+.btn-4:hover {
+    background: black;
+     transition: .2s ease-out;
+     transition-delay: 0.2s;
+}
+
+.contact-title-hero1{
+		display:none;
+}
+.exit{
+background: url('https://atomiqconsulting.com/wp-content/uploads/2019/10/kisspng-scalable-vector-graphics-portable-network-graphics-income-2-18-registrations-5b8077941099e1.482309461535145876068.png');
+}
+
+.bahamas-space {
+    box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.75) !important;
+}
+
+.contact-title-hero{
+		text-align:center;
+    background: #fff;
+    color: #000;
+		z-index:-1;
+    margin-top: 5px;
+    padding: 50px;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.alignnone {
+    margin: 5px 20px 20px 0;
+    -webkit-box-shadow: 0px 0px 33px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 33px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 33px -2px rgba(0,0,0,0.75);
+}
+
+.services-title {
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 33px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 33px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 33px -2px rgba(0,0,0,0.75);
+    font-size: 30px;
+    font-weight: bold;
+    color: #00ADCF;
+    margin-bottom: 70px;
+}
+
+#topright{
+	z-index:1;
+}
+
+#topleft{
+	z-index:1;
+}
+
+
+.services-title{
+	margin-left:auto;
+	margin-right: auto;
+	font-size: 30px;
+	font-weight: bold;
+	color: #00ADCF;
+	margin-bottom: 70px;
+}
+.services-title:after {
+    position: absolute;
+    clear: both;
+    content: "\f0a7";
+    font-family: FontAwesome;
+    bottom: -1.5em;
+    font-size: 50px;
+    right: calc(50% - 24.73px);
+    color: #00adcf;
+	
+}
+
+
+.bahamas-space1{
+	    text-align: center !important;
+    border: 1px solid white;
+    padding: 1em;
+    box-shadow: 0px 0px 2px black;
+    color: #00adcf;
+    position: relative;
+    overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.entry-content{
+	margin: 0px 1em 0em 1em !important;
+}
+
+.learn-more-services1{ 
+		max-width: 200px;
+ 		padding: 0.5em;
+		margin-left:auto;
+		margin-right:auto;
+	margin-bottom: 30px;
+    background: white;
+    color: #66cee2;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 150ms;
+    border: 1px solid #66cee2;
+}
+.learn-more-services1 a:hover {
+    padding: 0.5em;
+    background: #66cee2;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 150ms;
+    border: 1px solid #66cee2;
+}
+
+
+.homePost .titleLink h2{
+	font-size: 16px;
+}
+
+.icon-attomiq{
+	padding-top:30px;
+}
+
+body{
+	line-height:inherit;
+}
+
+.learn-more-services {
+    position: absolute;
+    bottom: 1em;
+    left: calc(50% - 60.48px);
+}
+
+h2{
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	line-height: inherit;
+}
+strong, .strong {
+    font-style: normal;
+}
+
+.hero-texting{
+	    margin-top: -50px;
+}
+
+.hero-subtexting{
+	    font-size:20px;
+}
+
+.socialmediafooter.fb {
+    background: #4267b2;
+}
+
+#fxSection {
+		height: 450px;
+}
+.call-to-action {
+	border-top: 1.1px dashed #00adcf;
+	border-bottom: 1.1px dashed #00adcf;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 50%;
+	background-size: cover;
+}
+
+.white-text {
+	color: #fff;
+}
+
+.standard-button, .navbar-register-button {
+	padding: 10px 25px;
+	border: 3px solid #f16c20;
+	border-color: #f16c20;
+	border-radius: 30px;
+	color: #fff;
+	background: rgba(241,108,32,0.4);
+	font-size: 20px;
+	white-space: initial;
+	text-decoration: none;
+}
+
+strong, .strong {
+	font-weight: 600;
+}
+
+.call-to-action .section-overlay-layer {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background: rgba(13, 60, 85, 0.8);
+}
+
+.call-to-action h2 {
+	margin-top: 20px;
+	margin-bottom: 50px;
+	font-size: 2.4rem;
+	line-height: 3.125rem;
+}
+
+.call-to-action h2 a {
+	color: #fff;
+}
+
+.modal-content {
+	padding: 10px 30px 30px 30px;
+}
+
+.modal-content button {
+	width: 100%;
+}
+
+.ribbon-wrap {
+	text-align: center;
+}
+
+.telegram{
+	background-image:url('https://atomiqconsulting.com/wp-content/uploads/2019/09/telegram.png') !important;
+	background-position:center !important;
+	background-size: 50px !important;
+	background-repeat: no-repeat !important;
+	margin-top:2em;
+	width:4em;
+	height: 4em;
+}
+
+.contactforminfo{
+	display:flex;
+	align-items:center;
+	max-width: fit-content;
+}
+.contactformitems{
+	padding-right: 4em;
+}
+
+.fb2{
+	background-image: url('https://atomiqconsulting.com/wp-content/uploads/2019/09/hiclipart.com-id_isovb.png');
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: 50px;
+	width:4em;
+	height: 4em;
+}
+
+.socialmediafooter.telegram {
+    background: none;
+	background-size: cover;
+}
+
+.messager{
+	background-image:url('https://atomiqconsulting.com/wp-content/uploads/2019/09/messanger.png') !important;
+background-position:center;
+	background-repeat: no-repeat;
+	background-size: 50px;
+	width:4em;
+	height: 4em;
+}
+
+.whatsup{
+	background-image:url('https://atomiqconsulting.com/wp-content/uploads/2019/09/whatsapp.png');
+background-position:center;
+	background-repeat: no-repeat;
+	background-size: 55px;
+	width:4em;
+	height: 4em;
+}
+
+.space1{
+	  padding-left: 1em;
+    position: relative;
+	  
+}
+
+li{
+	list-style:circle;
+	    color: #00ADCF;
+}
+
+@media (max-width: 567px) and (min-width: 0px){
+	#videoSection {
+    height: 100% !important;
+}
+	.wrap-wp {
+    margin: 0px 0px 0px 0px !important;
+}
+	#videoSection>div {
+    padding-top: 10% !important;
+    padding-bottom: 10% !important;
+}
+	#videoSection{
+		    height: -webkit-fill-available;
+		height: auto !important;
+		background-size: cover !important;
+	}
+	#videoSection>div>a{
+		    max-width: 85% !important;
+	}
+	#videoSection>div>a>p>span{
+		font-size: 28px !important;
+		
+	}
+	#videoSection>div>a>p>span:last-child{
+		    font-size: 22px !important;
+	}
+	#fxSection {
+    height: 1100px;
+}
+	.wp-pagenavi a, .wp-pagenavi span {
+    margin: 2px 0px 0px -2px;
+}
+	
+	.wp-block-embed-youtube{
+		margin: 0px;
+	}
+	
+	.contactforminfo {
+    display: flex;
+    flex-direction: column;
+    float: none;
+    width: auto;
+    flex-flow: wrap;
+    word-break: break-all;
+}
+	.contact-title-4 {
+		text-align:center;
+	}
+		
+	
+	.btn-1{
+		font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px ;
+    color: #fff;
+    padding-right: 5px 
+}
+		.btn-2{
+	font-size: 14px;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+	.btn-3{
+		font-size: 14px;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+	.btn-4{
+		font-size: 14px;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+	.wpxButton{
+		margin-bottom: 15px;
+	}
+
+.broker-image{
+	max-width:70%;
+}
+
+
+.bahamas-space{
+	margin-top:80px;
+}
+
+.atomiq-title{
+	  color: #00adcf;
+    font-weight: bold;
+}
+
+#wpcf7-f90-p60-o1{
+		margin-top:100px;
+	}
+
+}
+@media (max-width: 1200px) and (min-width: 769px){
+#wpcf7-f90-p60-o1{
+		margin-left:auto;
+		margin-right: auto;
+	float:none;
+	margin-top:0px;
+	}
+	.contact-hero{
+		text-align: center !important;
+	}
+	
+	.contactforminfo {
+    float: none;
+    margin-left: auto;
+		margin-right: auto;}
+	
+.social_contacts_wrap {
+    margin-bottom: 30px;
+}
+}
+
+
+@media (max-width: 768px) and (min-width: 568px){
+	#fxSection {
+    height: 1100px;
+}
+	
+	.broker-image{
+		display:flex;
+		flex-direction: column;
+	}
+	#wpcf7-f90-p60-o1 {
+    margin-top: 20px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+	.contactforminfo {
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+	}
+
+@media (max-width: 567px) and (min-width: 320px){
+	.wpxButton2{
+		margin-top:5%;
+	}
+	#wpcf7-f90-p60-o1{
+		margin-top:0px;
+	}
+	
+.contact-title{
+    font-size: 25px !important;
+}
+	.contact-title-2{
+		font-size: 25px !important;
+	}
+	.contact-title-3{
+		font-size: 25px !important;
+	}
+	.contact-title-4{
+		text-align:center;
+		font-size: 25px !important;
+	}
+	.contact-subtitle {
+    font-size: 17px !important;
+    }
+	
+	.contact-title{
+		font-size: 25px;
+	}
+	#wpcf7-f90-p60-o1 {
+    width: fit-content;
+    float: left;
+}
+	.broker-image{
+	max-width:100%;
+}
+	.contactforminfo{
+	display:flex;
+		flex-direction: column;
+}
+}
+
+.btn-wrapper{
+	   
+	margin-bottom: 40px !important;
+}
+
+.col-xl-3{
+	    display: flex;
+    	justify-content: center;
+			margin-bottom: 10px
+}
+
+.contact-hero {
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 26px;
+    color: #000;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+}
+
+.contact-title{
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 0.35px;
+	margin-bottom: 10px;
+}
+
+.contact-title-2{
+	    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.35px;
+    margin-bottom: 10px;
+}
+.contact-title-2:before {
+    font-family: FontAwesome;
+    content: url(https://atomiqconsulting.com/wp-content/uploads/2019/09/phone.png);
+    position: relative;
+    top: 0.8em;
+    left: calc(2% - 0.9em);
+    color: #00adcf;
+}
+
+.contact-title1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-title1:before {
+    font-family: FontAwesome;
+    content: url(https://atomiqconsulting.com/wp-content/uploads/2019/09/logo-4-e1569567213707.png);
+    position: relative;
+    left: calc(2% - 0.9em);
+    color: #00adcf;
+}
+
+
+.contact-title-3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.35px;
+    margin-bottom: 10px;
+}
+
+.contact-title-3:before {
+    font-family: FontAwesome;
+    content: url(https://atomiqconsulting.com/wp-content/uploads/2019/09/email.png);
+    position: relative;
+    top: 0.8em;
+    left: calc(2% - 0.9em);
+    color: #00adcf;
+}
+
+.contact-title-4 {
+   font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.35px;
+    margin-bottom: 10px;
+}
+
+.contact-title-4:before {
+    font-family: FontAwesome;
+    content: url(https://atomiqconsulting.com/wp-content/uploads/2019/09/5_live_chat.png);
+    position: relative;
+    top: 0.8em;
+    left: calc(2% - 0.9em);
+    color: #00adcf;
+}
+
+.contact-title-5 {
+   display:flex;
+	justify-content:center;
+	margin-bottom:0px !important;
+}
+
+
+
+
+
+
+.contact-title:before {
+    font-family: FontAwesome;
+    content: url(https://atomiqconsulting.com/wp-content/uploads/2019/09/head_office.png);;
+    position: relative;
+    top: 1em;
+    left: calc(2% - 0.9em);
+    color: #00adcf;
+}
+
+.contact-subtitle{
+	margin-top: 0px;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+		padding-left: 2em;
+}
+
+.contactforminfo{
+	text-align:left;
+}
