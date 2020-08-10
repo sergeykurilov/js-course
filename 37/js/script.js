@@ -222,41 +222,88 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    const getResources = async (url) => {
+        const res = await fetch(url)
+
+        if(!res.ok){
+           throw new Error(`Could not fetch ${url}, status: ${res.status}`);
+        }
+
+        return await res.json();
+    };
+
+
+    // getResources('http://localhost:3000/menu')
+    //     .then(data => {
+    //         data.forEach(({img,altimg,title,descr,price}) => {
+    //             new MenuCard(img,altimg,title,descr,price, '.menu .container').render();
+    //         });
+    //     });
+
+    // getResources('http://localhost:3000/menu')
+    //     .then(data => createCard(data));
+
+// **************************
+    axios.get('http://localhost:3000/menu')
+        .then(data =>   data.data.forEach(({img,altimg,title,descr,price}) => {
+                        new MenuCard(img,altimg,title,descr,price, '.menu .container').render();
+                    }));
+
+
+    function createCard(data){
+        data.forEach(({img,altimg,title,descr,price}) => {
+            const element = document.createElement('div');
+            element.classList.add('menu__item');
+            element.innerHTML= `
+            <img src=${img} alt=${altimg}>
+            <h3 class="menu__item-subtitle">${title}</h3>
+            <div class="menu__item-descr">${descr}</div>
+            <div class="menu__item-divider"></div>
+            <div class="menu__item-price">
+                <div class="menu__item-cost">Цена:</div>
+                <div class="menu__item-total"><span>${price}</span> грн/день</div>
+             </div>
+            
+            `;   
+            
+            document.querySelector('.menu .container').append(element);
+        });
+    }
 
     // const div = new MenuCard()
     // div.render();
 
-    new MenuCard(
-        "img/tabs/vegy.jpg",
-        "vegy",
-        'Меню "Фитнес"',
-        '"Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!',
-        9,
-        '.menu .container',
-        'menu__item',
-    ).render();
+    // new MenuCard(
+    //     "img/tabs/vegy.jpg",
+    //     "vegy",
+    //     'Меню "Фитнес"',
+    //     '"Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!',
+    //     9,
+    //     '.menu .container',
+    //     'menu__item',
+    // ).render();
 
 
-    new MenuCard(
-        "img/tabs/vegy.jpg",
-        "vegy",
-        'Меню "Фитнес"',
-        '"Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!',
-        9,
-        '.menu .container',
-        'menu__item',
-    ).render();
+    // new MenuCard(
+    //     "img/tabs/vegy.jpg",
+    //     "vegy",
+    //     'Меню "Фитнес"',
+    //     '"Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!',
+    //     9,
+    //     '.menu .container',
+    //     'menu__item',
+    // ).render();
 
 
-    new MenuCard(
-        "img/tabs/vegy.jpg",
-        "vegy",
-        'Меню "Фитнес"',
-        '"Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!',
-        9,
-        '.menu .container',
-        'menu__item',
-    ).render();
+    // new MenuCard(
+    //     "img/tabs/vegy.jpg",
+    //     "vegy",
+    //     'Меню "Фитнес"',
+    //     '"Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!',
+    //     9,
+    //     '.menu .container',
+    //     'menu__item',
+    // ).render();
 
 
 
@@ -271,11 +318,25 @@ window.addEventListener('DOMContentLoaded', function() {
     };
 
     forms.forEach(item => {
-        postData(item);
+        bindpostData(item);
     });
+
+
+    const postData = async (url, data) => {
+        const res = await fetch(url, {
+            method: "POST",
+            headers: {
+                'Content-type': 'application/json',
+            },
+            body: data
+        });
+
+        return await res.json();
+    };
+
 //когда используем связыку обьекта + FormData заглавие не нужно указывать
 // оно устанавливается автоматически
-    function postData(form){
+    function bindpostData(form){
         form.addEventListener('submit', (e) => {
             e.preventDefault();
             
@@ -287,36 +348,42 @@ window.addEventListener('DOMContentLoaded', function() {
             `;
             form.insertAdjacentElement('afterend', statusMessage)
 
-            const request = new XMLHttpRequest();
-            request.open('POST', 'server.php');
+    
 
-            request.setRequestHeader('Content-type', 'application/json');
+            
             const formData = new FormData(form);
 
-            const object = {};
+            // const object = {};
+            // formData.forEach(function(value, key){
+            //     object[key] = value;
+            // });
+            const json = JSON.stringify(Object.fromEntries(formData.entries()));
 
-            formData.forEach(function(value, key){
-                object[key] = value;
-            });
-
-
-            const json = JSON.stringify(object);
-
-            request.send(json);
-
-
-
-
-            request.addEventListener('load', () => {
-               if(request.status === 200) {
-                   console.log(request.response);
+            // const json = JSON.stringify(object);
+              postData('http://localhost:3000/requests', json)
+              .then(data => {
+                   console.log(data);
                    showThanksModal(message.success);
-                   form.reset();
-                 statusMessage.remove(); 
-               } else{
+                   statusMessage.remove(); 
+              }).catch(()=> {
                 showThanksModal(message.failer);
-               }
-            });
+              }).finally(() => {
+                  form.reset();
+              });
+
+
+
+
+            // request.addEventListener('load', () => {
+            //    if(request.status === 200) {
+            //        console.log(request.response);
+            //        showThanksModal(message.success);
+            //        form.reset();
+            //      statusMessage.remove(); 
+            //    } else{
+            //     showThanksModal(message.failer);
+            //    }
+            // });
         });
     }
 
@@ -345,4 +412,9 @@ window.addEventListener('DOMContentLoaded', function() {
         }, 4000);
     }
     
+
+    // fetch('http://localhost:3000/menu')
+    //     .then(data => data.json())
+    //     .then(res => console.log(res));
+
 });
