@@ -249,6 +249,74 @@ window.addEventListener('DOMContentLoaded', function() {
                         new MenuCard(img,altimg,title,descr,price, '.menu .container').render();
                     }));
 
+    /*
+    1) получить все элементы с которыми будем работать
+    2) индекс для текущего слайда
+    3) функция показа слайда (показ, скрытие других(индекс, остальные скрыть)если будем кликать на стелки то перейдем в начало когда она будет создана то при нажатии на стрелки показывает след.слайд +1 , -1 индекс )
+    4) нумерация сколько слайдов в верстке
+    5) нумерация с нулём
+    */  
+
+    const slider = document.querySelector('.offer__slider'),
+          sliderWrapper = document.querySelector('.offer__slider-wrapper'),
+          slide = document.querySelectorAll('.offer__slide'),
+          sliderCurrentCounter = document.querySelector('#current'),
+          sliderTotalCounter = document.querySelector('#total'),
+          nextSlide = document.querySelector('.offer__slider-prev'),
+          prevSlide = document.querySelector('.offer__slider-next');
+        
+        //   function nextSlide(){
+        //     goToSlide(currentSlide+1);
+        // }
+        
+        // function previousSlide(){
+        //     goToSlide(currentSlide-1);
+        // }
+        
+        // function goToSlide(n){
+        //     slides[currentSlide].className = 'slide';
+        //     currentSlide = (n+slides.length)%slides.length;
+        //     slides[currentSlide].className = 'slide showing';
+        // }
+    function sliderFunc(){
+      totalSlides = slide.length;
+       let current=0;
+       slide.forEach((item,key) => {
+           if(key != current){
+            item.classList.add('hide');
+           }
+       })
+ prevSlide.addEventListener('click', () => {
+    slide.forEach((item,key) => {
+        if(key != current){
+            item.classList.remove('show');
+         item.classList.add('hide');
+        }else if(key == current){
+            item.classList.add('show');
+        }
+    })
+        current = (current - 1) % slide.length;
+        console.log(current);
+    });
+    nextSlide.addEventListener('click', (n) => {
+        slide.forEach((item,key) => {
+            if(key != current){
+                item.classList.remove('show');
+                item.classList.add('hide');
+            }else if(key == current){
+                item.classList.add('show');
+            }
+        });
+
+        parseInt(current)
+        current = (current + 1) % slide.length;
+        console.log(current);
+    });    
+          
+
+    }
+
+    sliderFunc();
 
     function createCard(data){
         data.forEach(({img,altimg,title,descr,price}) => {
