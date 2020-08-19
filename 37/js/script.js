@@ -48,7 +48,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     // timer
 
-    const deadline = '2020-08-11';
+    const deadline = '2020-08-19';
 
     function getTimeRemaining(endtime){
         const t = Date.parse(endtime) - Date.parse(new Date()),
@@ -254,7 +254,7 @@ window.addEventListener('DOMContentLoaded', function() {
     2) индекс для текущего слайда
     3) функция показа слайда (показ, скрытие других(индекс, остальные скрыть)если будем кликать на стелки то перейдем в начало когда она будет создана то при нажатии на стрелки показывает след.слайд +1 , -1 индекс )
     4) нумерация сколько слайдов в верстке
-    5) нумерация с нулёмwqeqweqeq
+    5) нумерация с нулём
     */  
 
     const slider = document.querySelector('.offer__slider'),
@@ -265,22 +265,10 @@ window.addEventListener('DOMContentLoaded', function() {
           nextSlide = document.querySelector('.offer__slider-prev'),
           prevSlide = document.querySelector('.offer__slider-next');
         
-        //   function nextSlide(){
-        //     goToSlide(currentSlide+1);
-        // }
-        
-        // function previousSlide(){
-        //     goToSlide(currentSlide-1);
-        // }
-        
-        // function goToSlide(n){
-        //     slides[currentSlide].className = 'slide';
-        //     currentSlide = (n+slides.length)%slides.length;
-        //     slides[currentSlide].className = 'slide showing';
-        // }
     function sliderFunc(){
-      totalSlides = slide.length;
+       let totalSlides = slide.length;
        let current=0;
+      
        slide.forEach((item,key) => {
            if(key != current){
             item.classList.add('hide');
@@ -290,13 +278,15 @@ window.addEventListener('DOMContentLoaded', function() {
     slide.forEach((item,key) => {
         if(key != current){
             item.classList.remove('show');
-         item.classList.add('hide');
+            item.classList.add('hide');
         }else if(key == current){
             item.classList.add('show');
         }
-    })
-        current = (current - 1) % slide.length;
-        console.log(current);
+    });
+
+    parseInt(current)
+    current = ((current - 1)+slide.length) % slide.length;
+    console.log(current);
     });
     nextSlide.addEventListener('click', (n) => {
         slide.forEach((item,key) => {
